@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DFS</title>
+  </head>
+  <body>
+    <div>
+      <h1>Traversing The DOM With Recursion</h1>
+      Parent Div main container
+      <div class="sibling">
+        1 level deep #1 sibling has children
+        <div>
+          2 level deep
+          <div>
+            3 level deep
+            <div>
+              4 level deep container of p tag children
+              <p>This is the target p tag to style red</p>
+              <p>This is the target p tag to style red</p>
+              <p>This is the target p tag to style red</p>
+              <p>This is the target p tag to style red</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sibling">1 level deep #2 sibling no children</div>
+      <div class="sibling">1 level deep #3 sibling no children</div>
+      <div class="sibling">
+        1 level deep #4 sibling has children
+        <div>
+          2 level deep
+          <div>
+            3 level deep
+            <div>
+              4 level deep
+              <div>
+                5 level deep container of p tag children
+                <p>This is the target p tag to style red</p>
+                <p class="x" id="x">
+                  This is the target p tag to style red--test
+                </p>
+                <p>This is the target p tag to style red</p>
+                <p>This is the target p tag to style red</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sibling">1 level deep #5 sibling no children</div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
+
+<!-- -------- -->
